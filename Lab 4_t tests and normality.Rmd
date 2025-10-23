@@ -45,7 +45,6 @@ Load the dataset using read_csv, and also take a look at the two variables of in
 **Task 1** _Load the Pulse data and filter it to only valid responses._
 
 ```{r Task1}
-#Code here
 
 ```
 
@@ -56,14 +55,12 @@ To do so, create a random sample of 5,000 records using the `slice_sample` funct
 **Task 2** _Create a random 5,000 record sample from the Pulse dataset. Then run a Shapiro-Wilk normality test, create a QQ plot with a line showing normality, and create a histogram._
 
 ```{r Task2}
-#Code here.
 
 ```
 
 
-**Task2 3** _Based on the results you saw in question 2, is the THHLD_NUMKID variable normally distributed? How do each of those three tests inform your decision?_
+**Task 3** _Based on the results you saw in Task 2, is the THHLD_NUMKID variable normally distributed? How do each of those three tests inform your decision?_
 
-{Your response here}
 
 ###Part 2: Testing the difference in number of children.###
 
@@ -71,54 +68,48 @@ Now you can test whether the number of children is different in between displace
 
 **Task 4** _Based on the normality of the data, what is the appropriate statistical test for determining if the actual number of children differs between these two groups? Explain why this test is appropriate and give a null and alternative hypothesis for this test_
 
-{Your response here.}
-
-**Task 5** _Run the test you identified in question 4. Be sure to use the FULL sample for this test (not the smaller sample from Question 2). Also calculate the mean for each dataset, which you can use to determine the nature of the difference--which group (if any) has more children._
+**Task 5** _Run the test you identified in Task 4. Be sure to use the FULL sample for this test (not the smaller sample from Task 2). Also calculate the mean for each dataset, which you can use to determine the nature of the difference--which group (if any) has more children._
 
 ```{r Task5}
-#Code goes here
+
 ```
 
 **Task 6** _Interpret the results of the analysis you did in task 5. Do you reject the null hypothesis? Why or why not? What can we say about any difference in the number of children in these two groups, focusing on the significance of the test result and the difference in means within this sample?_
 
-{Your response here.}
-
 ###Part 3: Identifying differences in time displaced by natural disasters across income groups
 
-In Part 2, you used a test of difference that included a continuous and categorical variable. In this section, you'll focus only on households displaced by natural disasters to identify statistically significant differences in time displaced using two categorical variables: one placing responses into groups by income (INCOME) and the other showing the time displaced (ND_HOWLONG). Again, look at the data dictionary to better understand how these two variables are structured.
+In Part 2, you used a test of difference that included a continuous and categorical variable. In this section, you'll focus only on households displaced by natural disasters to identify statistically significant differences in time displaced using two categorical variables: one placing responses into groups by income (INCOME) and the other showing the time displaced (ND_HOWLONG). Again, look at the data dictionary to better understand how these two variables are structured. Before you start: What were your null and alternative hypotheses for the chi square test? (You'll include this in your response in Task 11.)
 
 **Task 7** _Reload the original, unfiltered Pulse dataset (not the one you used in parts 1 and 2). Select only observations for households displaced by a natural disaster using the ND_DISPLACE variable. Then filter for records with valid responses to INCOME and ND_HOWLONG. Call the head of the table with `kable` when done_
 
 ```{r Task7}
-#Code goes here.
+
 ```
 
 **Task 8** _Create a contingency table of responses to the ND_HOWLONG variable by INCOME. The rows of this table should be the income groups and the columns should be the categorical variables showing time displaced. Call the table when you are done._
 
 ```{r Task8}
-#Code goes here.
+
 ```
 
 **Task 9** _Identify if there are statistically significant differences in displacement time between these income groups by conducting a chi square test on the contingency table in task 8. You'll likely need to delete the INCOME variable to do so._ 
 
 ```{r Task9}
-#Code goes here
+
 ```
 
 **Task 10** _To help with your interpretation of results, convert the contingency table in Task 8 from one that shows the number of responses to one that shows the percentage of responses within each income group. So in each row, the number should show the percentage of responses in that income group that selected that response for ND_HOWLONG._
 
 ```{r Task10}
-#Your code goes here
+
 ```
 
-**Question 11** _Interpret the results of your analysis in tasks 9 and 10. What were your null and alternative hypotheses for the chi square test? Do you reject the null hypothesis based on these results and why (or why not)? What does the table in task 9 tell you about any differences in displacement across income groups?_
+**Task 11** _Interpret the results of your analysis in tasks 9 and 10. What were your null and alternative hypotheses for the chi square test? Do you reject the null hypothesis based on these results and why (or why not)? What does the table in task 9 tell you about any differences in displacement across income groups?_
 
-{Response goes here.}
-
-###Challenge question:
+###Challenge Question:
 Pick a variable of interest from the pulse dataset and create an appropriate state level estimate for it using the EST_ST variable, which is the state FIPS code. For example, you could look at the percentage of the population displaced (ND_DISPLACE) by state. Or you could map where displacement by flooding was most common using the ND_TYPE2 variable. 
 
-Once you've calculated that estimate, map it out using the `states_albers` geopackage file in the data folder for this lab. 
+Once you've calculated that estimate, map it out using the `states_albers` geopackage file in the data folder for this lab. Provide a brief description of the patterns you observe.
 
 ```{r}
 #Code goes here
