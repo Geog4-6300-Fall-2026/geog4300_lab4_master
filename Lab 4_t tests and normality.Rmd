@@ -29,12 +29,11 @@ You'll use this data to answer two research questions:
 * Is there a relationship between household income and a household's ability to return to its place of residence after being displaced? 
 
 ## Assessment criteria
-For the lab to be marked as complete, the following criteria must be met:
+This lab assesses the following learning standards:
 
-* Criteria 1: Your responses will show an ability to filter survey data for appropriate responses. (Tasks 1 and 7)
-* Criteria 2: Your responses will demonstrate that you can test a variable for normality and decide on the appropriate statistical test. (Tasks 2, 3, and 4)
-* Criteria 3: Your responses will show your ability to correctly use two-sample tests of difference and chi-square tests. (Tasks 5, 6, 9, and 10)
-* Criteria 4: Your responses will accurately and descriptively interpret the results of your statistical tests and explain their significance. (Tasks 7 and 11)
+21. Assess the normality of a variable and use those results to select between parametric and non-parametric statistical tests.
+23. Apply two-sample tests of difference and accurately interpret results in terms of hypothesis testing, statistical significance, and the direction and magnitude of any differences.
+24. Construct contingency tables and apply chi-square tests to assess association between categorical variables, interpreting results in terms of significance and practical meaning.
 
 ### Part 1: Loading/filtering data and checking for normality.
 
