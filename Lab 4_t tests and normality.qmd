@@ -1,7 +1,10 @@
 ---
-title: 'Geog4/6300: Lab 4'
-output: github_document
-editor_options: 
+title: "Geog4/6300: Lab 4"
+format:
+  gfm:
+    toc: true
+    number-sections: true
+editor_options:
   chunk_output_type: console
 ---
 
@@ -19,7 +22,7 @@ Unlike the aggregate census data you're probably used to working with, microdata
 
 There's more info on the Pulse survey and the public use microdata file at this link:
 
-* https://www.census.gov/programs-surveys/household-pulse-survey/data/datasets.html
+* [Household Pulse Survey Public Use Files](https://www.census.gov/programs-surveys/household-pulse-survey/data/datasets.html)
 
 The main data are contained in the `pulse_2023` csv file in the data folder. The data dictionary for this dataset is also available in the data folder.
 
@@ -35,7 +38,7 @@ This lab assesses the following learning standards:
 23. Apply two-sample tests of difference and accurately interpret results in terms of hypothesis testing, statistical significance, and the direction and magnitude of any differences.
 24. Construct contingency tables and apply chi-square tests to assess association between categorical variables, interpreting results in terms of significance and practical meaning.
 
-### Part 1: Loading/filtering data and checking for normality.
+### Loading/filtering data and checking for normality.
 
 In the first part of the lab, you'll be using two variables: THHLD_NUMKID (number of children in a household) and ND_DISPLACE (whether a household was displaced by a natural disaster in the last year). 
 
@@ -55,7 +58,7 @@ You'll be conducting a two-sample test of difference to look at whether the numb
 
 ```
 
-### Part 2: Testing the difference in number of children.###
+### Testing the difference in number of children.
 
 Now you can test whether the number of children differs between displaced and non-displaced households.
 
@@ -73,7 +76,7 @@ Now you can test whether the number of children differs between displaced and no
   * Do you reject the null hypothesis? Why or why not? 
   * Based on the test result and the group means, what can we conclude about differences in the number of children between these two groups?
 
-### Part 3: Identifying differences in time displaced by natural disasters across income groups
+### Identifying differences in time displaced by natural disasters across income groups
 
 In Part 2, you used a test of difference that included a continuous and categorical variable. In this section, you'll focus only on households displaced by natural disasters to identify statistically significant differences in time displaced using two categorical variables: one placing responses into groups by income (INCOME) and the other showing the time displaced (ND_HOWLONG). 
 
@@ -107,7 +110,7 @@ Again, look at the data dictionary to better understand how these two variables 
   * Do you reject the null hypothesis based on these results and why (or why not)? 
   * What do your results in Task 9 tell you about differences in how quickly households were able to return?
 
-###Challenge Question:
+### Challenge Question:
 Calculate and map the percentage of households reporting displacement (ND_DISPLACE) by state. To do so, you'll need to start with a version of the dataset that excludes non-valid responses and then calculate the percentage displaced by state.
 
 Once you've calculated that estimate, map it out using the `states_albers` geopackage file in the data folder. Provide a brief description of the patterns you observe.
